@@ -47,3 +47,9 @@ updated documentation
 changed logging code in gc_read.clu, gcd_tab.clu in lib/clu
 changed definition of CLUREFSZ from 8 back to 4 in lib/gcd.equ
 commented out failing check for "insufficient room" in cludent/_buffered_read.clu
+
+12/24/2020 ALANVF
+
+fix name collisions with `restrict`
+  replaced all occurrences of `restrict` with` restriction` (because it's now a reserved keyword)
+  added `restrict` as a reserved keyword in the compiler

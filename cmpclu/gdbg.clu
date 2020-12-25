@@ -920,7 +920,7 @@ escape_ckeyword = proc(nm: string) returns (string)
                       "typedef", "union", "unsigned", "void",
                       "volatile", "word",
                       "err", "locals", "elist", "ecode",
-                      "ecode2", "errcode", "user_locals"]
+                      "ecode2", "errcode", "user_locals", "restrict"]
     for each_st: name in namelist$elements(reserved) do
         if nm = each_st then
            new: name := "OP" || nm

@@ -6476,6 +6476,7 @@ CLUREF STR_ecode;
 CLUREF STR_ecode2;
 CLUREF STR_errcode;
 CLUREF STR_user_137locals;
+CLUREF STR_restrict;
 static int escape_ckeyword_own_init = 0;
 CLUREF escape_ckeywordOPreserved;
 
@@ -6519,11 +6520,12 @@ CLUREF *ret_1;
         stringOPcons("ecode2", CLU_1, CLU_6, &STR_ecode2);
         stringOPcons("errcode", CLU_1, CLU_7, &STR_errcode);
         stringOPcons("user_locals", CLU_1, CLU_11, &STR_user_137locals);
+        stringOPcons("restrict", CLU_1, CLU_8, &STR_restrict);
         stringOPcons("OP", CLU_1, CLU_2, &STR_OP);
         escape_ckeyword_own_init = 1;
         {
             {CLUREF T_0_1;
-            sequenceOPnew2(CLU_29, &T_0_1);
+            sequenceOPnew2(CLU_30, &T_0_1);
             T_0_1.vec->data[0] = STR_auto.num;
             T_0_1.vec->data[1] = STR_case.num;
             T_0_1.vec->data[2] = STR_const.num;
@@ -6553,6 +6555,7 @@ CLUREF *ret_1;
             T_0_1.vec->data[26] = STR_ecode2.num;
             T_0_1.vec->data[27] = STR_errcode.num;
             T_0_1.vec->data[28] = STR_user_137locals.num;
+            T_0_1.vec->data[29] = STR_restrict.num;
             escape_ckeywordOPreserved.num = T_0_1.num;
             }
             }
